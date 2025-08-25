@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elgon Tech Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/elgon-logo.jpg" />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <div class="brand">
+                <img src="assets/elgon-logo.jpg" alt="Elgon Tech Hub logo" class="brand__logo" />
+                <span class="brand__name">Elgon Tech Hub</span>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <ul class="nav__links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#mission">Mission & Vision</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero container">
+            <h1>Dream. Build. Grow.</h1>
+            <p class="hero__subtitle">We're a community of dreamers, doers, and creators. Learn how to use tech to level up your studies, career, and hustle. Your safe space to explore tech — right here in Trans Nzoia County.</p>
+            <div class="hero__cta">
+                <a href="#services" class="btn btn--light">Explore Services</a>
+                <a href="https://docs.google.com/forms/d/1teOxLqneKKTA9WZUkrhF7BFeqwTbVyqHfEhmaA3-WuY/edit" target="_blank" class="btn btn--primary">Join the Hub</a>
+            </div>
+        </section>
+        <section class="section container" id="about">
+            <h2>Why Elgon Tech Hub?</h2>
+            <p>We’re on a mission to nurture and grow relevant tech skills among the youth, transforming communities and businesses through technology. Whether you’re just starting or leveling up, Elgon Tech Hub is your launchpad.</p>
+        </section>
+
+        <section class="section section--alt" id="services">
+            <div class="container">
+                <h2>What We Offer</h2>
+                <div class="grid cards">
+                    <article class="card">
+                        <h3>Cyber Services</h3>
+                        <ul>
+                            <li>Document processing & online applications</li>
+                            <li>Printing, scanning, and certifications</li>
+                            <li>Computer literacy support</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Web Development</h3>
+                        <ul>
+                            <li>Beginner to advanced training</li>
+                            <li>Business websites and landing pages</li>
+                            <li>Portfolio and e‑commerce sites</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Data Analysis</h3>
+                        <ul>
+                            <li>Training: Excel, Python, Power BI</li>
+                            <li>Dashboards and reporting</li>
+                            <li>Business insights and automation</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Graphic Design</h3>
+                        <ul>
+                            <li>Training: Canva, Photoshop, Illustrator</li>
+                            <li>Branding: logos, flyers, posters</li>
+                            <li>Social media content packs</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="services-cta">
+                    <a href="https://docs.google.com/forms/d/1teOxLqneKKTA9WZUkrhF7BFeqwTbVyqHfEhmaA3-WuY/edit" target="_blank" class="btn btn--primary">Request a Service</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="mission">
+            <h2>Mission & Vision</h2>
+            <div class="grid two">
+                <div class="panel">
+                    <h3>Mission</h3>
+                    <p>To nurture and grow relevant tech skills among the youths.</p>
+                </div>
+                <div class="panel">
+                    <h3>Vision</h3>
+                    <p>To equip and transform the youth through technology.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt" id="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>Have a question or want to join our community? Send us a message directly to <strong>elgontechhub@gmail.com</strong>. For service requests, please use our <a href="https://docs.google.com/forms/d/1teOxLqneKKTA9WZUkrhF7BFeqwTbVyqHfEhmaA3-WuY/edit" target="_blank">service request form</a>.</p>
+                <form id="contactForm" class="form">
+                    <div class="form__row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required />
+                    </div>
+                    <div class="form__row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                    </div>
+                    <div class="form__row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+                    </div>
+                    <div class="form__actions">
+                        <button type="submit" class="btn btn--primary">Send message</button>
+                        <span id="formStatus" class="form__status" role="status" aria-live="polite"></span>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer__content">
+            <p>Based in Trans Nzoia County • © <span id="year"></span> Elgon Tech Hub</p>
+            <p>Built with ❤️ for our community of learners and creators.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

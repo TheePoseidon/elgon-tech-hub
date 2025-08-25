@@ -1,0 +1,28 @@
+{
+  "name": "elgon-tech-hub",
+  "version": "1.0.0",
+  "description": "Elgon Tech Hub website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon --watch server.js --watch public --ext js,html,css server.js"
+  },
+  "keywords": [
+    "elgon",
+    "tech",
+    "hub",
+    "trans nzoia",
+    "community"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.9"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
+

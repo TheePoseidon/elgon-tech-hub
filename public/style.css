@@ -3,16 +3,16 @@
     --surface: #121923;
     --text: #e6eef8;
     --muted: #9ab0c3;
-    --primary: #3ab0ff;
-    --primary-700: #0e8cdf;
-    --accent: #00ffa3;
+    --primary: #1141dd;
+    --primary-700: #0e3fdf;
+    --accent: #0044ff;
     --card: #0f1520;
     --border: #1f2a37;
     
     /* Glass effect variables */
-    --glass-bg: rgba(15, 23, 42, 0.6);
-    --glass-border: rgba(255, 255, 255, 0.08);
-    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    --glass-bg: rgba(7, 49, 146, 0.6);
+    --glass-border: rgb(6, 48, 185);
+    --glass-shadow: 0 8px 32px rgba(41, 12, 209, 0.452);
 }
 
 * {
@@ -58,7 +58,7 @@ body.menu-open {
 }
 
 .site-header {
-    background: rgba(10, 14, 20, 0.95);
+    background: rgba(9, 83, 194, 0.267);
     position: fixed;
     top: 0;
     left: 0;

@@ -396,11 +396,12 @@ a:not(.btn):not(.nav__links a):hover::after {
     border-bottom: 1px solid rgba(31, 42, 55, 0.6);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    margin: 0 -20px;
 }
 
 .section h2 {
     font-size: clamp(24px, 4vw, 36px);
-    margin: 0 0 18px;
+    margin: 0 auto;
 }
 
 .grid {
@@ -423,7 +424,7 @@ a:not(.btn):not(.nav__links a):hover::after {
 }
 
 .services-cta {
-    margin-top: 40px;
+    margin: 40px auto;
     text-align: center;
 }
 
@@ -572,6 +573,7 @@ html {
 .section {
     animation: fadeIn 0.8s ease-out forwards;
     position: relative;
+    margin: auto;
 }
 
 .section:not(.section--alt)::before {

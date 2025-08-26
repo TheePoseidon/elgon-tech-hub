@@ -383,6 +383,8 @@ a:not(.btn):not(.nav__links a):hover::after {
 
 .section {
     padding: 56px 0;
+    width: auto;
+    margin: auto;
 }
 
 .section--alt {

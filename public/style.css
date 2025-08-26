@@ -37,7 +37,7 @@ body {
         radial-gradient(1200px 600px at 80% -10%, rgba(58, 176, 255, 0.15) 0%, rgba(0, 0, 0, 0) 60%),
         radial-gradient(800px 800px at 20% 60%, rgba(0, 255, 163, 0.1) 0%, rgba(0, 0, 0, 0) 60%),
         var(--bg);
-    background-attachment: fixed;
+    background-attachment: flex;
     color: var(--text);
     line-height: 1.6;
     overflow-x: hidden;
@@ -59,7 +59,7 @@ body.menu-open {
 
 .site-header {
     background: rgba(9, 83, 194, 0.295);
-    position: fixed;
+    position: top;
     top: 0;
     left: 0;
     right: 0;
@@ -230,10 +230,13 @@ a:not(.btn):not(.nav__links a):hover::after {
 
 .hero {
     padding: 120px 0 80px;
-    text-align: left;
+    text-align: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(180deg, var(--bg) 0%, rgba(10, 14, 20, 0.95) 100%);
+    background: linear-gradient(180deg, var(--bg) 0%, rgba(18, 44, 83, 0.95) 100%);
+    border-radius: 16px;
+    width: 100%;
+    text-wrap: balance;
 }
 
 .hero::before {
@@ -244,20 +247,21 @@ a:not(.btn):not(.nav__links a):hover::after {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(58, 176, 255, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+    background: radial-gradient(circle, rgba(2, 68, 155, 0.651) 0%, rgba(1, 68, 145, 0.603) 70%);
     z-index: -1;
     animation: pulse 8s ease-in-out infinite alternate;
+    text-align: center;
 }
 
 .hero::after {
     content: '';
-    position: absolute;
+    position: relative;
     bottom: -100px;
     left: -100px;
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(0, 255, 163, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
+    background: radial-gradient(circle, rgba(0, 89, 255, 0.575) 0%, rgba(49, 3, 214, 0.616) 70%);
     z-index: -1;
     animation: pulse 10s ease-in-out infinite alternate-reverse;
 }
@@ -297,18 +301,23 @@ a:not(.btn):not(.nav__links a):hover::after {
     background-clip: text;
     color: transparent;
     display: inline-block;
+    text-align: center;
 }
 
 .hero__subtitle {
     color: var(--muted);
     font-size: clamp(14px, 2.5vw, 18px);
-    max-width: 900px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .hero__cta {
     display: flex;
     gap: 12px;
     margin-top: 18px;
+    text-align: center;
+    justify-content: center;
 }
 
 .btn {

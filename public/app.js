@@ -26,22 +26,22 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 	// Mobile menu toggle
 	const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-	const navLinks = document.querySelector('.nav__links');
+	const navLinksContainer = document.querySelector('.nav__links');
 	const hero = document.querySelector('.hero');
 	const header = document.querySelector('.site-header');
 	
-	if (mobileMenuBtn && navLinks) {
+	if (mobileMenuBtn && navLinksContainer) {
 		mobileMenuBtn.addEventListener('click', () => {
-			navLinks.classList.toggle('active');
+			navLinksContainer.classList.toggle('active');
 			document.body.classList.toggle('menu-open');
 			mobileMenuBtn.classList.toggle('open');
 		});
 		
 		// Close mobile menu when clicking on a link
-		const links = navLinks.querySelectorAll('a');
+		const links = navLinksContainer.querySelectorAll('a');
 		links.forEach(link => {
 			link.addEventListener('click', () => {
-				navLinks.classList.remove('active');
+				navLinksContainer.classList.remove('active');
 				document.body.classList.remove('menu-open');
 				mobileMenuBtn.classList.remove('open');
 			});

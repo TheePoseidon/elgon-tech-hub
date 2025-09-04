@@ -60,7 +60,7 @@ body.menu-open {
 
 .site-header {
     background: rgba(9, 83, 194, 0.295);
-    position: top;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -125,6 +125,8 @@ body.menu-open {
         z-index: 90;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
         transition: right 0.3s ease;
+        display: flex;
+        align-items: flex-start;
     }
     
     .nav__links.active {
